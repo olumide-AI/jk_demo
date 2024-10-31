@@ -51,3 +51,50 @@ video {
             padding: 20px;
         }
 /* css for video 
+
+/* ccs for image layout */
+{
+      background-color: #f8f9fa;
+    }
+    .product-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+    .product-image {
+      background-color: #fafafa;
+      border-radius: 8px;
+      width: 60%;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product-details {
+      width: 35%;
+      text-align: left;
+    }
+    .product-details h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .product-details p {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+    .btn-view-here {
+      padding: 10px 20px;
+      border: 2px solid #6c757d;
+      border-radius: 5px;
+      background: none;
+      font-weight: bold;
+      color: #6c757d;
+    }
+    .btn-view-here:hover {
+      background-color: #6c757d;
+      color: white;
+    }
+/* End of image layout */
