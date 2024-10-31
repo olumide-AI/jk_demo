@@ -65,12 +65,12 @@ video {
     .product-image {
       background-color: #fafafa;
       border-radius: 8px;
-      width: 60%;
+      width: 40%;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .product-image img {
-      width: 100%;
+      width: 80%;
       border-radius: 8px;
     }
     .product-details {
