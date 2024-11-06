@@ -132,6 +132,7 @@ background-color: #f7f3ef;
       padding: 50px 0;
     }
     .testimonial-title {
+      text-align: center;
       font-size: 2em;
       font-weight: bold;
       margin-bottom: 40px;
