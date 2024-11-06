@@ -122,3 +122,42 @@ video {
       cursor: pointer;
     }
 /* End of Product and review Carousel */
+
+/* For the review Columns */
+background-color: #f7f3ef;
+      color: #333;
+    }
+    .testimonial-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .testimonial-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .testimonial-card {
+      
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+    .testimonial-rating {
+      font-size: 1.5em;
+      color: #333;
+    }
+    .testimonial-heading {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .testimonial-text {
+      font-style: italic;
+      margin: 15px 0;
+    }
+    .testimonial-author {
+      font-weight: bold;
+      color: #555;
+    }
+/* End of the review column */
