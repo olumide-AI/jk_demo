@@ -24,6 +24,15 @@ video {
   max-width: 100%;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 /* css for video on landing page */
 .hero {
             position: relative;
@@ -78,7 +87,7 @@ video {
       text-align: left;
     }
     .product-details h1 {
-      font-size: 2rem;
+      font-size: 1rem;
       font-weight: bold;
     }
     .product-details p {
