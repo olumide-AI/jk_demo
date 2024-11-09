@@ -69,9 +69,13 @@ video {
 }
 .product-container {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
-  padding: 50px;
+  /*padding: 50px;*/
+  gap: 4rem; /*or desired gap max-width: 55rem; */
+  justify-content:center; 
+  margin-left and right: auto; 
+  padding-top and bottom: 3rem 
 }
 .product-image {
   background-color: #fafafa;
@@ -81,15 +85,16 @@ video {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .product-image img {
-  width: 80%;
+  /*width: 80%;*/
   border-radius: 8px;
+  flex: 0 1 15rem; 
 }
 .product-details {
   width: 35%;
   text-align: left;
 }
 .product-details h1 {
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .product-details p {
