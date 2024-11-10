@@ -30,6 +30,7 @@ video {
 .nav {
   display: flex;
   justify-content: space-between;
+  padding: 1 rem;
 }
 
 .navbar-collapse {
@@ -58,7 +59,7 @@ video {
 }
 
 .overlay h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem; /* small devices*/
   font-weight: 600;
 }
 /* css for video 
@@ -78,8 +79,8 @@ video {
   justify-content:center; 
   margin-left: auto;
   margin-right: auto; 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .product-image {
   background-color: #fafafa;
@@ -100,6 +101,7 @@ video {
 .product-details h1 {
   font-size: 3rem;
   font-weight: bold;
+  word-wrap: break-word;
 }
 .product-details p {
   font-size: 1rem;
