@@ -117,9 +117,7 @@ video {
   left: 50%; Centers the button horizontally 
   transform: translateX(-50%); /* Adjusts for the button's width */
    display: inline-block; /* Ensures buttons behave like inline-block elements */
-   margin-top: auto;
-  flex-direction: column; /* Stacks content vertically */
-  align-items: center;
+  justify-content:center; 
   font-weight: 400; /* Regular font weight */
   text-align: center; /* Centers the text inside the button */
   white-space: nowrap; /* Prevents text from wrapping */
