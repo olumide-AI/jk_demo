@@ -39,7 +39,7 @@ body {
 .nav a {
   text-decoration: none; /* Removes underline */
   font-size: 1rem; /* Adjusts the font size */
-  color: #000; /* Black text color */
+  color: #000000; /* Black text color */
   font-weight: 500; /* Semi-bold */
   transition: color 0.3s ease; /* Smooth hover transition */
 }
@@ -56,11 +56,11 @@ video {
   max-width: 100%;
 }
 
-.nav {
+/*.nav {
   display: flex;
   justify-content: space-between;
-  padding: 1 rem;
-}
+padding: 1 rem;}*/
+
 
 .navbar-collapse {
   flex-grow: 0;
@@ -139,9 +139,6 @@ video {
 .product-details .btn-view-here {
   display: inline-block; /* Ensures button stays inline */
   margin-top: 1rem; /* Adds spacing above the button */
-}
-
-.btn-view-here {
  /* padding: 10px 20px;
   border: 2px solid ;
   border-radius: 5px;
@@ -184,10 +181,10 @@ video {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.footer a {
+/*.footer  a {
   color: #000000;
-  text-decoration: none;
-}
+text-decoration: none;}*/
+
 .footer ul {
   list-style-type: none;
   padding: 0;
