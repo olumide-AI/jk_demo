@@ -19,6 +19,35 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
 }
+.nav {
+  display: flex;
+  justify-content: center; /* Centers the entire navbar content */
+  align-items: center; /* Ensures vertical alignment */
+  gap: 2rem; /* Adds spacing between logo and links */
+}
+
+
+.nav ul {
+  display: flex; /* Aligns the links horizontally */
+  gap: 1.5rem; /* Adds space between each link */
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Ensures no extra spacing */
+  padding: 0; /* Ensures no extra spacing */
+  gap: 1.5rem; /* Spacing between individual links */
+}
+
+.nav a {
+  text-decoration: none; /* Removes underline */
+  font-size: 1rem; /* Adjusts the font size */
+  color: #000; /* Black text color */
+  font-weight: 500; /* Semi-bold */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav a:hover {
+  color: #007bff; /* Changes color on hover */
+}
+
 
 /* images and videos max out at full width */
 img,
@@ -96,7 +125,7 @@ video {
 }
 .product-details {
   width: 35%;
-  text-align: left;
+  text-align: center; /* Centers all content, including the button */
 }
 .product-details h1 {
   font-size: 3rem;
@@ -107,6 +136,11 @@ video {
   font-size: 1rem;
   color: #6c757d;
 }
+.product-details .btn-view-here {
+  display: inline-block; /* Ensures button stays inline */
+  margin-top: 1rem; /* Adds spacing above the button */
+}
+
 .btn-view-here {
  /* padding: 10px 20px;
   border: 2px solid ;
@@ -150,8 +184,6 @@ video {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.footer p,
-.footer li,
 .footer a {
   color: #000000;
   text-decoration: none;
