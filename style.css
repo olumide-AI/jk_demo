@@ -107,9 +107,9 @@ video {
 }
 .btn-view-here {
   padding: 10px 20px;
-  border: 2px solid #6c757d;
+  border: 2px solid #0000ff;
   border-radius: 5px;
-  background: none;
+  background: #0000ff;
   font-weight: bold;
   color: #6c757d;
 }
