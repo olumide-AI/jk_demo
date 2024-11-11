@@ -19,25 +19,30 @@ ul {
 /* Navbar Styling */
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #f8f9fa;
+  justify-content: space-between; /* Centers the entire navbar content */
+  align-items: center; /* Ensures vertical alignment */
+  gap: 2rem; /* Adds spacing between logo and links */
 }
 
+
 .nav ul {
-  display: flex;
-  gap: 1.5rem;
+  display: flex; /* Aligns the links horizontally */
+  gap: 30rem; /* Adds space between each link */
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Ensures no extra spacing */
+  padding: 0; /* Ensures no extra spacing */
 }
 
 .nav a {
-  text-decoration: none;
-  color: #000000;
+  text-decoration: none; /* Removes underline */
+  font-size: 1rem; /* Adjusts the font size */
+  color: #000000; /* Black text color */
+  font-weight: 500; /* Semi-bold */
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
-.nav a.active {
-  color: #007bff;
-  font-weight: bold;
+.nav a:hover {
+  color: #007bff; /* Changes color on hover */
 }
 
 /* Hero Section */

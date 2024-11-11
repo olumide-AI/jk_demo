@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-size: 16px; /* Add base font size */
   line-height: 1.5;
 }
 .nav {
@@ -28,11 +29,10 @@ body {
 
 .nav ul {
   display: flex; /* Aligns the links horizontally */
-  gap: 1.5rem; /* Adds space between each link */
+  gap: 30rem; /* Adds space between each link */
   list-style: none; /* Removes bullet points */
   margin: 0; /* Ensures no extra spacing */
   padding: 0; /* Ensures no extra spacing */
-  gap: 1.5rem; /* Spacing between individual links */
 }
 
 .nav a {
@@ -45,6 +45,7 @@ body {
 
 .nav a:hover {
   color: #007bff; /* Changes color on hover */
+  cursor: pointer;
 }
 
 
