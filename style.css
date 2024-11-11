@@ -144,7 +144,76 @@ video {
   }
 }
 
+
 /* End of image layout */
+
+
+/* General row settings for the cards */
+.row-furniture {
+  margin-top: 20px;
+}
+
+/* Card styles */
+.card {
+  border: none; /* Removes card border */
+  border-radius: 10px; /* Rounds corners */
+  overflow: hidden; /* Ensures hover effects stay inside card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lifts card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+}
+
+/* Image hover effects */
+.card-img-top {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* Zooms image slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow */
+  opacity: 0.9; /* Slight dim effect */
+}
+
+/* Button styles */
+.btn-view-here {
+  display: block; /* Button takes up full width */
+  margin: 0 auto; /* Centers the button */
+  margin-top: 15px; /* Adds space above the button */
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px; /* Rounds button corners */
+  transition: all 0.3s ease;
+}
+
+.btn-view-here:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarges button */
+}
+
+/* Card body styles */
+.card-body {
+  text-align: center; /* Ensures content inside cards is centered */
+  padding: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .btn-view-here {
+    margin-top: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px; /* Adds spacing between cards */
+  }
+}
+
 
 /* Hero Section */
 .contact-hero {
