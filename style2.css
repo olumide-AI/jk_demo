@@ -115,3 +115,32 @@ ul {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+.product-details .btn-view-here {
+  display: inline-block; /* Ensures button stays inline */
+  margin-top: 1rem; /* Adds spacing above the button */
+ /* padding: 10px 20px;
+  border: 2px solid ;
+  border-radius: 5px;
+  background: #007BFF;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;  Absolute positioning 
+  bottom: 10px; Aligns button 20px from the bottom 
+  left: 50%; Centers the button horizontally 
+  transform: translateX(-50%); /* Adjusts for the button's width */
+   display: inline-block; /* Ensures buttons behave like inline-block elements */
+  justify-content:center; 
+  font-weight: 400; /* Regular font weight */
+  text-align: center; /* Centers the text inside the button */
+  white-space: nowrap; /* Prevents text from wrapping */
+  vertical-align: middle; /* Aligns the button properly in a line of text */
+  user-select: none; /* Prevents text selection */
+  border: 1px solid transparent; /* Default border with no visible color */
+  padding: 0.375rem 0.75rem; /* Adds inner spacing (padding) */
+  font-size: 1rem; /* Default font size */
+  line-height: 1.5; /* Default line height */
+  border-radius: 0.375rem; /* Rounded corners */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transitions for hover/focus */
+
+}
