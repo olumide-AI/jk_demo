@@ -29,7 +29,7 @@ body {
 
 .nav ul {
   display: flex; /* Aligns the links horizontally */
-  gap: 30rem; /* Adds space between each link */
+  gap: 1.5rem; /* Adds space between each link */
   list-style: none; /* Removes bullet points */
   margin: 0; /* Ensures no extra spacing */
   padding: 0; /* Ensures no extra spacing */
