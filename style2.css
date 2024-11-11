@@ -144,3 +144,71 @@ ul {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transitions for hover/focus */
 
 }
+.product-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-container.reverse {
+  flex-direction: column-reverse; /* Reverse the stack for alternating items */
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    flex-direction: row; /* Row layout for larger screens */
+    text-align: left; /* Left-align content */
+  }
+
+  .product-container.reverse {
+    flex-direction: row-reverse; /* Reverse row layout for larger screens */
+  }
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image img:hover {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.product-details p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  border: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
