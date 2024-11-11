@@ -97,34 +97,6 @@ video {
   margin: 0 auto;
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.product-image img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.product-image img:hover {
-  transform: scale(1.05); /* Subtle zoom effect on hover */
-}
-
-.product-details {
-  text-align: left;
-  padding: 1rem;
-}
-
 .product-details h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -152,6 +124,10 @@ body {
   transform: scale(1.05);
 }
 
+.img-fluid {
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 /* End of image layout */
 
 /* Hero Section */
