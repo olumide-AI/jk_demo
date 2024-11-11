@@ -215,21 +215,63 @@ video {
 }
 
 
+
 /* Hero Section */
 .contact-hero {
-  background-color: #6c757d;
+  background: linear-gradient(135deg, #495057, #343a40);
   color: white;
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Frosted overlay effect for modern look */
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark transparency overlay */
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2; /* Ensures text is above the overlay */
+}
+
+/* Headline styling */
 .contact-hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 2px; /* Adds a modern feel */
 }
 
+/* Paragraph styling */
 .hero-overlay p {
   margin-top: 0.5rem;
+  font-size: 1.25rem;
+  color: #dcdcdc; /* Slightly lighter color for contrast */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 3rem 1rem;
+  }
+
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
 }
 
 /* Contact Section */
