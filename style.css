@@ -53,6 +53,7 @@ body {
   flex-grow: 0;
 }
 
+
 /* css for video on landing page */
 /* images and videos max out at full width */
 img,
@@ -347,3 +348,11 @@ text-decoration: none;}*/
 }
 /* End of footer column */
 
+.logo {
+  height: 40px; 
+  max-width: auto; /* Ensures the image scales properly */
+  background-color: #f8f9fa; /* Add a light background behind the logo */
+  padding: 5px; /* Add some spacing around the logo */
+  border-radius: 5px; /* Optional rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
