@@ -11,13 +11,13 @@ async function getProducts() {
   const options = {
     method: "GET",
     headers: {
-      Authorization: `Bearer YOUR_AIRTABLE_API_KEY`,
+      Authorization: `Bearer patalfq5yroYtu7wV.77b794fc190f162598e9f93cc9207da0fdcd337901d7694394a4a1085cc0524c`,
     },
   };
 
   try {
     const response = await fetch(
-      `https://api.airtable.com/v0/YOUR_APP_ID/Furnitures`,
+      `https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures`,
       options
     );
     const data = await response.json();
@@ -72,13 +72,13 @@ async function showProductDetail(productId) {
   const options = {
     method: "GET",
     headers: {
-      Authorization: `Bearer YOUR_AIRTABLE_API_KEY`,
+      Authorization: `Bearer patalfq5yroYtu7wV.77b794fc190f162598e9f93cc9207da0fdcd337901d7694394a4a1085cc0524c`,
     },
   };
 
   try {
     const response = await fetch(
-      `https://api.airtable.com/v0/YOUR_APP_ID/Furnitures/${productId}`,
+      `https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures/${productId}`,
       options
     );
     const data = await response.json();

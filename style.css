@@ -379,6 +379,8 @@ header .btn-group {
 
 .card {
   cursor: pointer;
+   height: 300px; 
+   width:auto; 
 }
 
 .card:hover {
