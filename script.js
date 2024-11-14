@@ -2,7 +2,7 @@
 
 // Airtable Configuration
 const Airtable = require('airtable');
-const base = new Airtable({ apiKey: 'YOUR_API_KEY' }).base('https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures');
+const base = new Airtable({ apiKey: 'patalfq5yroYtu7wV.77b794fc190f162598e9f93cc9207da0fdcd337901d7694394a4a1085cc0524c' }).base('https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures');
 
 // Fetch Products
 function fetchProducts() {
