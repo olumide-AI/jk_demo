@@ -61,17 +61,24 @@
     </nav>
     
    <header>
-        <h1>Our Products </h1>
-        <button id="back-button" class="hidden">Back to List</button>
-    </header>
-    <main>
-        <section id="product-list" class="product-list">
-            <!-- List view will dynamically load here -->
-        </section>
-        <section id="product-detail" class="hidden">
-            <!-- Detail view will dynamically load here -->
-        </section>
-    </main>
+  <h1>Our Products</h1>
+  <div class="btn-group" role="group" aria-label="Product Categories">
+    <button class="btn btn-secondary" onclick="filterProducts('Sofa')">Sofas</button>
+    <button class="btn btn-secondary" onclick="filterProducts('Chair')">Chairs</button>
+    <button class="btn btn-secondary" onclick="filterProducts('Beds')">Beds</button>
+    <button class="btn btn-secondary" onclick="getProducts()">All</button>
+  </div>
+  <button id="back-button" class="btn btn-primary hidden">Back to List</button>
+</header>
+<main>
+  <section id="product-list" class="product-list">
+    <!-- List view will dynamically load here -->
+  </section>
+  <section id="product-detail" class="hidden">
+    <!-- Detail view will dynamically load here -->
+  </section>
+</main>
+   
      <div class="container footer bg-body-tertiary">
       <div class="container text-center row align-items-start">
         <div class="col-md-4">
