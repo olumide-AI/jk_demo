@@ -22,9 +22,14 @@
   </head>
   
   <body> <!-- Body of code --> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- bootstrap navbar styling, size of screen, colour manipulation of nav-->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- bootstrap navbar styling, size of screen, colour manipulation of nav-->
+      <!-- Navbar spacing, put nav links together and logo,name separted -->
       <div class="w-100 nav">
-        <a class="navbar-brand" href="index.html">JK FURNITURE</a>
+       <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="https://cdn.glitch.global/ffe4e1f2-0bf1-46b5-95d9-ba85b77cec59/jk-furniture-high-resolution-logo-grayscale.png?v=1731413502414" alt="JK Furniture Logo" class="logo me-2" />
+      JK FURNITURE
+    </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,14 +43,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <!-- Helps me space out the Nav bar w-100(full length of navbar), mb-2(controls margin for smaller screen), mb-lg-100 (margin for bigger screens)-->
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a> <!-- commented out active" aria-current="page" because contact is now the main page -->
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="product.html">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -157,41 +165,14 @@
 </div>
     </section>
 
-     <div class="container footer bg-body-tertiary">
-      <div class="container text-center row align-items-start">
-        <div class="col-md-4">
-          <h5>About Us</h5>
-          <p>
-            JK furniture is a minimalist oasis, locally made, sustainably
-            produced, and designed for simplicity, style, and convenience!
-            Discover more collection and enhance your space.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h5>Shop</h5>
-          <ul>
-            <li><a href="#">Sofas</a></li>
-            <li><a href="#">Consoles</a></li>
-            <li><a href="#">Tables</a></li>
-            <li><a href="#">Coffee Tables</a></li>
-            <li><a href="#">Chairs</a></li>
-            <li><a href="#">Beds</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Information</h5>
-          <p>
-            Have a question? Give us a call or fill out the contact form. We’d
-            love to hear from you.
-          </p>
-          <p>
-            <strong>Address:</strong> Ado Ekiti 360102, Ekiti, Nigeria<br />
-            <strong>Phone:</strong> +234-809-6753355<br />
-            <strong>Email:</strong> support@jkfurniture.com
-          </p>
-        </div>
-      </div>
-    </div>
+     <!-- Bootstrap JS script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    
        <!-- Bootstrap JS script-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
