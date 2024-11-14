@@ -1,18 +1,18 @@
 "use strict";
 
 // function for our list view
-async function fetchProducts() {
+async function getAllRecords() {
   let getResultElement = document.getElementById("product-list");
 
   const options = {
     method: "GET",
     headers: {
-      Authorization: `Bearer patalfq5yroYtu7wV.77b794fc190f162598e9f93cc9207da0fdcd337901d7694394a4a1085cc0524c`,
+      Authorization: `Bearer pateG7pBF1CkfmcW7.2c666498dc7818660958fea1c0bb95e5e1d33bbdb4871fed8ee5696394e05ce5`,
     },
   };
 
   await fetch(
-    `https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures \?&view=Stars`,
+    `https://api.airtable.com/v0/app4d1fvvjII8WH8W/Breweries?&view=Stars`,
     options
   )
     .then((response) => response.json())
@@ -24,8 +24,8 @@ async function fetchProducts() {
       let newHtml = "";
 
       for (let i = 0; i < data.records.length; i++) {
-        let logo = data.records[i].fields["name"]; // here we are getting column values
-        let name = data.records[i].fields["images"];
+        let logo = data.records[i].fields["Logo"]; // here we are getting column values
+        let name = data.records[i].fields["Name"];
         let neighborhood = data.records[i].fields["Neighborhood"];
 
         newHtml += `
