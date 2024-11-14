@@ -1,54 +1,63 @@
 "use strict";
 
-// function for our list view
-async function getAllRecords() {
-  let getResultElement = document.getElementById("product-list");
+// Airtable Configuration
+const Airtable = require('airtable');
+const base = new Airtable({ apiKey: 'YOUR_API_KEY' }).base('https://api.airtable.com/v0/appVWWY9vo2FICye0/Furnitures');
 
-  const options = {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer pateG7pBF1CkfmcW7.2c666498dc7818660958fea1c0bb95e5e1d33bbdb4871fed8ee5696394e05ce5`,
-    },
-  };
-
-  await fetch(
-    `https://api.airtable.com/v0/app4d1fvvjII8WH8W/Breweries?&view=Stars`,
-    options
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data); // response is an object w/ .records array
-
-      getResultElement.innerHTML = ""; // clear brews
-
-      let newHtml = "";
-
-      for (let i = 0; i < data.records.length; i++) {
-        let logo = data.records[i].fields["Logo"]; // here we are getting column values
-        let name = data.records[i].fields["Name"];
-        let neighborhood = data.records[i].fields["Neighborhood"];
-
-        newHtml += `
-        
-         <div class="col-xl-4 cardImageText">
-          <div class="card list move border-dark mb-5" style="width: 20rem;">
-          <a href="breweries.html?id=${
-            data.records[i].id
-          }">${
-          logo
-            ? `<img class="card-img-top rounded" alt="${name}" src="${logo[0].url}">`
-            : ``
-        }
-          </a>
-          <p hidden class="card-key">${neighborhood}</p>
-          </div>
-          </div>
-        </div>
-        
-        
-        `;
-      }
-
-      getResultElement.innerHTML = newHtml;
+// Fetch Products
+function fetchProducts() {
+  base('Products')
+    .select({
+      view: "Grid view" // Use Airtable view name
+    })
+    .eachPage((records, fetchNextPage) => {
+      records.forEach(record => {
+        displayProduct(record.fields);
+      });
+      fetchNextPage();
     });
+}
+
+// Display Product (Example List View)
+function displayProduct(product) {
+  const productList = document.getElementById('product-list');
+  const productItem = `
+    <div class="product">
+      <img src="${product.Image[0].url}" alt="${product.Name}">
+      <h3>${product.Name}</h3>
+      <p>${product.Description}</p>
+      <p>Price: ${product.Price}</p>
+    </div>
+  `;
+  productList.innerHTML += productItem;
+}
+
+// Call the Function
+fetchProducts();
+function displayDetailedView(product) {
+  const main = document.querySelector('main');
+  main.innerHTML = `
+    <div class="detailed-view">
+      <img src="${product.Image[0].url}" alt="${product.Name}">
+      <h2>${product.Name}</h2>
+      <p>${product.Description}</p>
+      <p>Price: ${product.Price}</p>
+      <button onclick="fetchProducts()">Back to List</button>
+    </div>
+  `;
+}
+
+
+// look up window.location.search and split, so this would take
+// https://dmspr2021-airtable-app.glitch.me/index.html?id=receHhOzntTGZ44I5
+// and look at the ?id=receHhOzntTGZ44I5 part, then split that into an array
+// ["?id=", "receHhOzntTGZ44I5"] and then we only choose the second one
+let idParams = window.location.search.split("?id=");
+if (idParams.length >= 2) {
+
+  // has at least ["?id=", "OUR ID"]
+  getOneRecord(idParams[1]); // create detail view HTML w/ our id
+} else {
+;
+  fetchProducts(); // no id given, fetch summaries
 }
