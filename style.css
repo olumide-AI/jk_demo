@@ -375,15 +375,29 @@ header .btn-group {
   gap: 1.5rem;
   justify-content: center;
   padding: 2rem;
+
+}
+/* Card Styling */
+.product-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card {
-  cursor: pointer;
-   height: 300px; 
-   width:auto; 
+.product-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+/* Image Styling */
+.product-image {
+  max-height: 200px; /* Constrain image height */
+  object-fit: cover; /* Prevent distortion */
+}
+
+/* Utility */
+.hidden {
+  display: none;
 }
