@@ -412,3 +412,18 @@ header .btn-group {
   display: none;
 }
 
+ #form-container {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
