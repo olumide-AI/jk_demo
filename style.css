@@ -147,7 +147,11 @@ video {
 .product-image {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer; /* Make it clickable or interactive */
+  max-height: 1000px; /* Constrain image height */
+  object-fit: cover; /* Prevent distortion */
 }
+
+
 
 .product-image:hover {
   transform: scale(1.05); /* Slight zoom-in effect */
@@ -393,6 +397,7 @@ header .btn-group {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-height: 400px;
 }
 
 .product-card:hover {
@@ -401,10 +406,6 @@ header .btn-group {
 }
 
 /* Image Styling */
-.product-image {
-  max-height: 200px; /* Constrain image height */
-  object-fit: cover; /* Prevent distortion */
-}
 
 /* Utility */
 .hidden {
