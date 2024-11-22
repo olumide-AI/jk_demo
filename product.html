@@ -60,26 +60,45 @@
       </div>
     </nav>
     
-    <main>
+   <main>
   <div class="container my-5">
-   <header class="text-center mb-4">
-  <h1>Our Products</h1>
-  <div class="btn-group" role="group" aria-label="Product Categories">
-    <button class="btn btn-secondary" onclick="filterProducts('Sofa')">Sofas</button>
-    <button class="btn btn-secondary" onclick="filterProducts('Chair')">Chairs</button>
-    <button class="btn btn-secondary" onclick="filterProducts('Beds')">Beds</button>
-    <button class="btn btn-secondary" onclick="getProducts()">All</button>
+    <!-- Header with Filters and Back Button -->
+    <header class="text-center mb-4">
+      <h1>Our Products</h1>
+      <div class="btn-group mb-3" role="group" aria-label="Product Categories">
+        <button class="btn btn-secondary" onclick="filterProducts('Sofa')">Sofas</button>
+        <button class="btn btn-secondary" onclick="filterProducts('Chair')">Chairs</button>
+        <button class="btn btn-secondary" onclick="filterProducts('Beds')">Beds</button>
+        <button class="btn btn-secondary" onclick="fetchProducts()">All</button>
+      </div>
+      <input
+        id="search-input"
+        type="text"
+        class="form-control my-3"
+        placeholder="Search for products..."
+        oninput="searchProducts(this.value)"
+      />
+      <button id="back-button" class="btn btn-primary hidden">Back to List</button>
+    </header>
+
+    <!-- Loader for Fetching Products -->
+    <div id="loader" class="text-center hidden my-3">
+      <p>Loading...</p>
+    </div>
+
+    <!-- Product List Section -->
+    <section id="product-list" class="row gy-4">
+      <!-- List view will dynamically load here -->
+    </section>
+
+    <!-- Product Detail Section -->
+    <section id="product-detail" class="hidden">
+      <!-- Detail view will dynamically load here -->
+    </section>
+
+    <!-- Pagination Controls -->
+    <div id="pagination-controls" class="text-center my-4"></div>
   </div>
-  <button id="back-button" class="btn btn-primary hidden">Back to List</button>
-</header>
-<main>
-  
-  <section id="product-list" class="row gy-4">
-    <!-- List view will dynamically load here -->
-  </section>
-  <section id="product-detail" class="hidden">
-    <!-- Detail view will dynamically load here -->
-  </section>
 </main>
    
      <div class="container footer bg-body-tertiary">

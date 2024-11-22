@@ -144,6 +144,15 @@ video {
     padding-bottom: 0;
   }
 }
+.product-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Make it clickable or interactive */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
 
 
 /* End of image layout */
