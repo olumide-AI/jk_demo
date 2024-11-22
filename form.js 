@@ -14,7 +14,7 @@
       const notes = document.getElementById("notes").value.trim();
 
       // Airtable API configuration
-      const apiKey = "YOUR_AIRTABLE_API_KEY"; // Replace with your Airtable API key
+      const apiKey = "Bearer patLq2nVN05VN1onU.0d2bee27d84384c7dc954b7ebac6a193a79c181704b2d45752159203feaf8348"; 
       const baseId = "YOUR_AIRTABLE_BASE_ID"; // Replace with your Airtable Base ID
       const tableName = "Table 1"; // Use the name of your Airtable table (e.g., "Table 1")
 
