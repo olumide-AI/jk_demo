@@ -24,8 +24,23 @@ displaying products and acquiring information about the company
 
 [Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
 
-#### ← `index.html`:
-First
+## ← `index.html`:
+Firstly
   * I set the document type to HTML 5, it's the standard right now 
   * I set english has the default language 
+The Head (metadata)
+  * I set the charcter encoding To UTF-8, it's also the curreent standard 
+  * name =viewport,  allows your webpage to be responsive on differnet designs 
+  * rel =icon, browser tab icon 
+  * Attached a bootstrap link for  css framework which is hosted on a content delivery network
+    Bootstrap has to be the first link cause it take priority, so your stylesheet dosen't overide it 
+    You can use important! on your css to override bootstrap css
+    You can also store bootstrap locally on you computer if you need offline access, instead of using the CDN 
+  * I have my title line 
+  * Then i have links to my js file and stylesheet css. 
+    js helps web page becaome more interactive 
+    css help with the color, borders, height and so much more 
+    
+Secondly
+
   
