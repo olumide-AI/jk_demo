@@ -44,13 +44,20 @@ displaying products and acquiring information about the company
 
 #### Secondly
 
-We have our Body(main part of the HTML file )
-As far as i know most webpage start with a NavBar and for conveience sake i just used a bootstrap Nav Bar
-nav - is just HTML semantics for navigation (prioritize accesibilty for users, what content are they going to be navigation to)
-class - (are used to group elements that you want to apply same characteristics to)
-  In the nav we have class navbar navbar-expang-lg bg-body-tetiary
-  navbar is just bootstrap default styling 
-  -expang-lg helps with responsiveness on differnet devices 
-  - body-tetiary - is the colour 
-div - lets us group elements and we can apply specific styling or such. Think of it like a container 
-
+- We have our Body(main part of the HTML file )  
+- As far as i know most webpage start with a NavBar and for conveience sake i just used a bootstrap Nav Bar  
+- nav - is just HTML semantics for navigation (prioritize accesibilty for users, what content are they going to be navigation to)  
+- class - (are used to group elements that you want to apply same characteristics to)  
+   * In the nav we have class navbar navbar-expang-lg bg-body-tetiary  
+   *  navbar is just bootstrap default styling  
+   *-expang-lg helps with responsiveness on differnet devices
+   * body-tetiary - is the colour 
+   
+div - lets us group elements and we can apply specific styling or such. Think of it like a container
+<div class="w-100 nav"> will stretch content along the full navbar 
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+  * This <a is an anchor tag for link(href) and img(src). That is pretty much all i have used it for so far  
+  * d flex - (i learnt this using flexbox froggy) but it helps you align you elements 
+  * align-item-center: vertically centers the logo and text, bootstrap documentation also helps 
+  *I attached my image using img(src) and addded alt(it is an accesibilty thing, in case people can not load your file )
+  *A specifically class was added for the logo me
