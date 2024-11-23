@@ -1,6 +1,7 @@
 # JK Furniture web page design
 
-This web page was built as a project for a pre-apprentenship program with dev/mission 
+This web page was built for a project for a pre-apprentenship program with dev/mission. I choose a furniture website for 
+displaying products and acquiring information about the company 
 ## What's in this project?
 
 ← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
@@ -23,3 +24,8 @@ This web page was built as a project for a pre-apprentenship program with dev/mi
 
 [Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
 
+#### ← `index.html`:
+First
+  * I set the document type to HTML 5, it's the standard right now 
+  * I set english has the default language 
+  
