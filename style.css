@@ -105,10 +105,10 @@ video {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  gap: 0.5;
 }
+
 
 .product-details h1 {
   font-size: 2rem;
@@ -141,20 +141,23 @@ video {
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 768px) {
-  .product-details {
-    margin-bottom: 0;
+  .product-details h1 {
+    font-size: 1.5rem;
   }
-
+  .product-details p {
+    font-size: 0.875rem;
+  }
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
   .row {
-    margin-bottom: 0;
-  }
-
-  .col-md-6 {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-bottom: 1rem;
   }
 }
+
 .product-image {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer; /* Make it clickable or interactive */
