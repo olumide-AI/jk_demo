@@ -82,9 +82,11 @@ The last section in the navbar is very essential, We have our links
   .nav{ display: flex - turns navbar into a flex property 
         justify-content: space-between - another flexbox froggy tool
   }
-  .nav ul (for all the link items) {gap: 15.5rem - adds spcing for just the links 
-  
+  .nav ul (for all the link items) {gap: 1.5rem - adds spacing for just the links on a small screen
+  margin & padding = 0
   }
+  Added a media query for larger screen (tablet and desktop set the gap to 15rem)
+  .nav a{}
 
 #### Thirdly
 

@@ -28,15 +28,22 @@ body {
 
 .nav ul {
   display: flex; /*Aligns the links horizontally */
-  gap: 15.5rem; /* Adds space between each link */
+  gap: 1.5rem; /* Adds space between each link */
   list-style: none; /* Removes bullet points */
-  margin: 0; /* Ensures no extra spacing */
-  padding: 0; /* Ensures no extra spacing */
+  /* margin: 0; Ensures no extra spacing */
+  /* padding: 0; Ensures no extra spacing */
+}
+
+/* Styles for larger screens (768px and up) */
+@media (min-width: 768px) {
+  .nav ul {
+    gap: 15rem; /* Increase gap for desktop view */
+  }
 }
 
 .nav a {
-  text-decoration: none; /* Removes underline */
-  font-size: 1rem; /* Adjusts the font size */
+  /* text-decoration: none; Removes underline */
+  font-size: 1.2rem; /* Adjusts the font size */
   color: #000000; /* Black text color */
   font-weight: 500; /* Semi-bold */
   transition: color 0.3s ease; /* Smooth hover transition */
