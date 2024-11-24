@@ -54,6 +54,11 @@ body {
   cursor: pointer;
 }
 
+.nav-link.active {
+  color: #0d6efd; /* A blue color for the active link */
+  font-weight: bold; /* Makes the link text bold */
+}
+
 .navbar-collapse {
   flex-grow: 0;
 }

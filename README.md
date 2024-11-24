@@ -86,7 +86,18 @@ The last section in the navbar is very essential, We have our links
   margin & padding = 0
   }
   Added a media query for larger screen (tablet and desktop set the gap to 15rem)
-  .nav a{}
+  .nav a (controls the individual nav links {
+  font-size(size of letters), font-weight(density of letter), color, transition(animate between 2 states of css property)
+  }
+  .nav a:hover {color change
+                change cursor from point to hand 
+  }
+  .nav-link.active (active shows which web page you're currently one and it's bolded so users could know what page they're on{
+  font-weight: bold; /* Makes the link text bold */
+}
+  .navbar-collapse {
+  flex-grow: 0;  Prevents the collapsible section from growing unnecessarily 
+}
 
 #### Thirdly
 
