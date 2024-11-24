@@ -109,9 +109,13 @@ The last section in the navbar is very essential, We have our links
   so much to pick from 
 -The class overlay will have to be improved with CSS to give it is pop 
 -The final feature on this video page is a botton straight out of bootstrap 
--I also have a p
+-I also have a poster for a fall back image for places with low accessibilty 
   The CSS for the Overlay 
   position:absolute
   top, left: 50% let the text be center around the video
   transform: translate(-50%, -50%): centering using the video width and height
+  z-index allow our text to always stay on top of our video 
+  
+# Product cards with layout and styling 
+  <div class="container py-0"> pu
   
