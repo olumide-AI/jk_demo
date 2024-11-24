@@ -78,7 +78,10 @@ The last section in the navbar is very essential, We have our links
 - nav-link is for our various link to different pages or sections in your web app
   \*We also used an id -which helps us specify a unique element
 
-#### Good whole CSS for Nav Bar
+#### Good whole CSS for Navbar
+  .nav{ display: flex - turns navbar into a flex property 
+        justify-content: space-between - another flexbox froggy tool
+  }
 
 #### Thirdly
 

@@ -23,8 +23,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-between; /* Centers the entire navbar content */
-  align-items: center; /* Ensures vertical alignment */
-  gap: 2rem; /* Adds spacing between logo and links */
 }
 
 
