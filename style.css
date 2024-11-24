@@ -23,6 +23,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between; /* Centers the entire navbar content */
+  background-color: #0056b3;
 }
 
 
@@ -47,8 +48,7 @@ body {
   color: #000000; /* Black text color */
   font-weight: 500; /* Semi-bold */
   transition: color 0.3s ease; /* Smooth hover transition */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
-  background-color:
+
 }
 
 .nav a:hover {
