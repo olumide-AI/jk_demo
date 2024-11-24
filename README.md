@@ -117,5 +117,7 @@ The last section in the navbar is very essential, We have our links
   z-index allow our text to always stay on top of our video 
   
 # Product cards with layout and styling 
-  <div class="container py-0"> pu
+  <div class="container py-0"> py-o ensures no spacing between this container and the one on top or at the bottom 
+   <div class="row mb-3 align-items-center"> (row is a bootstrap thing, needed for the 12 colum grid system)
+    <div class="col-md-6">
   
