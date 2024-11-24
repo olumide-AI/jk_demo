@@ -111,5 +111,6 @@ The last section in the navbar is very essential, We have our links
 -The final feature on this video page is a botton straight out of bootstrap 
 
   The CSS for the Overlay 
-  
+  position:absolute
+  top
   

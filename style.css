@@ -94,14 +94,13 @@ video {
 }
 
 .overlay h1 {
-  font-size: 3.0rem; /* small devices*/
+  font-size: 2.0rem; /* small devices*/
   font-weight: 600;
 }
-/* css for video 
-
-/* ccs for image layout */
- {
-  background-color: #f8f9fa;
+@media (min-width: 768px) {
+  .overlay h1 {
+    font-size: 3.0rem; /* Larger size for medium/large devices */
+  }
 }
 
 .container {
