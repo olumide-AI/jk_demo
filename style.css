@@ -47,6 +47,10 @@ body {
   color: #000000; /* Black text color */
   font-weight: 500; /* Semi-bold */
   transition: color 0.3s ease; /* Smooth hover transition */
+  position: sticky !important; /* Makes the navbar stick to the top */
+  top: 0; /* Ensures it stays at the very top */
+  overflow: hidden;
+  /*z-index: 1000; Keeps it above other content */
 }
 
 .nav a:hover {
