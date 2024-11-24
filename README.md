@@ -104,5 +104,12 @@ The last section in the navbar is very essential, We have our links
 #### Thirdly
 
 -We have our main body
-for the design
+-We have the Welcome video, it's eyecatching and draws people to the website. It is in a class=hero
+- <video autoplay loop muted playsinline class="video-background"> this is all HTML 5 attributes, mdn has all the attributes,  
+  so much to pick from 
+-The class overlay will have to be improved with CSS to give it is pop 
+-The final feature on this video page is a botton straight out of bootstrap 
+
+  The CSS for the Overlay 
+  
   
