@@ -98,7 +98,9 @@ The last section in the navbar is very essential, We have our links
   .navbar-collapse {
   flex-grow: 0;  Prevents the collapsible section from growing unnecessarily 
 }
-
+# Things i would improve in the Navbar:
+  *I will change the backgroung color to black and text white
+  
 #### Thirdly
 
 -We have our main body

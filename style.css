@@ -23,7 +23,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-between; /* Centers the entire navbar content */
-  background-color: #0056b3;
 }
 
 
