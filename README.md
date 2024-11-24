@@ -60,4 +60,11 @@ div - lets us group elements and we can apply specific styling or such. Think of
   * d flex - (i learnt this using flexbox froggy) but it helps you align you elements 
   * align-item-center: vertically centers the logo and text, bootstrap documentation also helps 
   *I attached my image using img(src) and addded alt(it is an accesibilty thing, in case people can not load your file )
-  *A specifically class was added for the logo me
+  *A specifically class was added for the logo for accessibillty and readbility i use logo me-3, 
+    becasue the me utility in bootstraps allow the logo to be separated from text. It creates that spacing 
+The next secton was the **button**, this again is a bootstrap function and specifically for smaller screens 
+  *data-bs is bootstrap cooking in the background using bootstrap, i really do not understand what the algorithm 
+   is behind the functions, but my specific code it is for a toggler to expand and collapse. This deals with functionality  
+  *aria - Accessible Rich Internet Applications. This allows users esppecially users with diasbaility 
+   to be able to understand your feature.for the design
+  
