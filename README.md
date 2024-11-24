@@ -44,16 +44,17 @@ displaying products and acquiring information about the company
 
 #### Secondly
 
-- We have our Body(main part of the HTML file )  
-- As far as i know most webpage start with a NavBar and for conveience sake i just used a bootstrap Nav Bar  
-- nav - is just HTML semantics for navigation (prioritize accesibilty for users, what content are they going to be navigation to)  
-- class - (are used to group elements that you want to apply same characteristics to)  
-   * In the nav we have class navbar navbar-expang-lg bg-body-tetiary  
-   *  navbar is just bootstrap default styling  
-   *-expang-lg helps with responsiveness on differnet devices
-   * body-tetiary - is the colour 
-   
+- We have our Body(main part of the HTML file )
+- As far as i know most webpage start with a NavBar and for conveience sake i just used a bootstrap Nav Bar
+- nav - is just HTML semantics for navigation (prioritize accesibilty for users, what content are they going to be navigation to)
+- class - (are used to group elements that you want to apply same characteristics to)
+  - In the nav we have class navbar navbar-expang-lg bg-body-tetiary
+  - navbar is just bootstrap default styling  
+    \*-expang-lg helps with responsiveness on differnet devices
+  - body-tetiary - is the colour
+
 div - lets us group elements and we can apply specific styling or such. Think of it like a container
+
 <div class="w-100 nav"> will stretch content along the full navbar 
 <a class="navbar-brand d-flex align-items-center" href="index.html">
   * This <a is an anchor tag for link(href) and img(src). That is pretty much all i have used it for so far  
@@ -61,10 +62,26 @@ div - lets us group elements and we can apply specific styling or such. Think of
   * align-item-center: vertically centers the logo and text, bootstrap documentation also helps 
   *I attached my image using img(src) and addded alt(it is an accesibilty thing, in case people can not load your file )
   *A specifically class was added for the logo for accessibillty and readbility i use logo me-3, 
-    becasue the me utility in bootstraps allow the logo to be separated from text. It creates that spacing 
-The next secton was the **button**, this again is a bootstrap function and specifically for smaller screens 
-  *data-bs is bootstrap cooking in the background using bootstrap, i really do not understand what the algorithm 
-   is behind the functions, but my specific code it is for a toggler to expand and collapse. This deals with functionality  
-  *aria - Accessible Rich Internet Applications. This allows users esppecially users with diasbaility 
-   to be able to understand your feature.for the design
+    becasue the me utility in bootstraps allow the logo to be separated from text. It creates that spacing for the design
+
+The next secton was the **button**, this again is a bootstrap function and specifically for smaller screens
+*data-bs is bootstrap cooking in the background using bootstrap, i really do not understand what the algorithm
+is behind the functions, but my specific code it is for a toggler to expand and collapse. This deals with functionality  
+ *aria - Accessible Rich Internet Applications. This allows users esppecially users with diasbaility
+to be able to understand your feature.
+
+The last section in the navbar is very essential, We have our links
+*We have couple classes here, even me i am getting lost in the in the source with all the classes bootstrap used
+*The collapse and navbar- collapse, still boostrap functionality
+
+- <ul class="navbar-nav"> Groups the navigation link
+- nav-link is for our various link to different pages or sections in your web app
+  \*We also used an id -which helps us specify a unique element
+
+#### Good whole CSS for Nav Bar
+
+#### Thirdly
+
+-We have our main body
+for the design
   
