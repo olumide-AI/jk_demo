@@ -402,6 +402,7 @@ header .btn-group {
   gap: 1.5rem;
   justify-content: center;
   padding: 2rem;
+   max-height: 400px;
 
 }
 /* Card Styling */
